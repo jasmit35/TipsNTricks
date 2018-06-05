@@ -1,0 +1,19 @@
+github
+Go to my github account on a browser and sign in.
+Click the “New Repository” button.
+Fill in the repository name and description.
+Select Public and Initialize with a README.
+Hit create repository.
+Development box
+Clone the project from github.
+cd gitdevl
+git clone https://github.com/jasmit35/cvs2pg_table
+
+Now add any existing source to the directory.
+Then commit it,
+git commit -m "Add in the 1st python script I developed."
+
+Then push it:
+
+
+

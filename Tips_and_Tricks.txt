@@ -1,0 +1,105 @@
+Changing a commit message (current)
+You can change the most recent commit message using the git commit --amend 
+command.
+
+Changing a commit message (older)
+https://help.github.com/articles/changing-a-commit-message/
+
+All GIT Developers must ensure the following details are set correctly for commit record accuracy. 
+?
+git config --global user.name "Developer Display Name"
+git config --global user.email "Developer Email Address"
+If the committer Name and Email information does not match the account that was used to 
+authenticate with CodeCloud (GIT), an error will occur. To avoid this error, you can verify these 
+details by running the command below.
+?
+git log --pretty=full
+ 
+Using GIT Command Line
+If you find that the settings were incorrect, you can fix both the Author and Committer for your last 
+commit by typing the following commands:
+?
+# Fix configuration
+git config --global  user.name "Developer Display Name"
+git config --global user.email "Developer Email Address"
+# Reset both author and committer
+git commit --amend --reset-author
+ 
+GUAVA policy and info on changing commit messages:
+
+https://wiki.web.att.com/pages/viewpage.action?pageId=730470881
+
+
+
+# show history of commits
+git log --oneline --decorate
+
+# list local branches
+git branch
+
+# list remote branches
+git branch --remote
+
+# create a branch
+git branch <brance name>
+
+# switch to a different branch
+git checkout <branch name>
+
+# merge from branch
+git merge <branch name>
+
+# view changes in the working tree not yet staged
+git diff <file>
+
+# view the changes between the index and the last commit
+git diff --cached <file>
+
+# view the changes in the working tree since the last commit
+git diff HEAD <file>
+
+# view changes between two commits
+git diff <commit1> <commit2> <file>
+
+# undo staged changes
+git checkout <file>
+
+# unstage changes
+git reset HEAD <file>
+
+# undo committed change
+git revert <commit> --no-edit
+
+# apply tag to the last commit
+git tag <tag>
+
+# apply tag to a version
+git tag -a <tag> <commit> -m <comment>
+
+# move or rename a file and stage
+git mv <source> <destination>
+
+# delete a file and stage
+git rm <file>
+
+# add a new remote identified by upstream
+Git remote add upstream
+
+# list both local and remote tracking branches
+git branch -a
+git branch --all
+
+#  list remotes with URL
+git remote -v
+git remote --verbose
+
+#  fetch the latest commits from remote identified by upstream
+git fetch upstream
+
+#  update local master from remote identified by upstream
+git checkout master
+git merge upstream master
+
+
+
+

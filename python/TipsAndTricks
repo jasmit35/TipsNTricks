@@ -1,0 +1,11 @@
+
+###
+Setting up a virtual environment in python3.
+
+#  Change to the parent directory for your new environment.
+cd ~/ghdevl
+
+#  Use the command to create a new virtual environment
+python3 -m venv ./project_name
+
+
